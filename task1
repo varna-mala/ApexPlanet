@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1 - Basics of Web Development | ApexPlanet Internship</title>
+
+<style>
+  /* ===== Step 2: Style the Webpage Using CSS ===== */
+  :root {
+    --primary: #1f6f5c;
+    --accent: #2fa88f;
+    --light-bg: #f2f6f4;
+    --text-dark: #1c2b28;
+    --white: #ffffff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+  }
+
+  header p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  nav {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover {
+    color: var(--accent);
+  }
+
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  section {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  section h2 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    border-left: 5px solid var(--accent);
+    padding-left: 10px;
+  }
+
+  section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+
+  a.link-item {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  button#alertBtn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+
+  button#alertBtn:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- ===== Step 1: Create a Simple Webpage Using HTML ===== -->
+  <header>
+    <h1>Basics of Web Development</h1>
+    <p>Task 1 &mdash; ApexPlanet Software Pvt. Ltd. Internship Program</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#interact">Try It</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About This Page</h2>
+      <p>
+        This webpage was built as part of Task 1 of the ApexPlanet Web Development
+        internship. It demonstrates the foundational building blocks of the web:
+        HTML for structure, CSS for styling, and JavaScript for interactivity.
+      </p>
+      <p>
+        Below you'll find headings, paragraphs, an image, a couple of links,
+        and a button that responds when clicked.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2>A Simple Image</h2>
+      <img src="https://picsum.photos/700/300" alt="Random placeholder scenery image">
+      <p>
+        Useful resources to learn more:
+        <a class="link-item" href="https://developer.mozilla.org/en-US/docs/Web" target="_blank" rel="noopener">MDN Web Docs</a>
+        and
+        <a class="link-item" href="https://www.apexplanet.in" target="_blank" rel="noopener">ApexPlanet Software</a>.
+      </p>
+    </section>
+
+    <section id="interact">
+      <h2>Basic JavaScript Interactivity</h2>
+      <p>Click the button below to trigger a simple JavaScript alert.</p>
+      <button id="alertBtn">Click Me!</button>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 ApexPlanet Software Pvt. Ltd. | Internship Task 1 of 5
+  </footer>
+
+  <!-- ===== Step 3: Add Basic JavaScript for Interactivity ===== -->
+  <script>
+    const btn = document.getElementById('alertBtn');
+    btn.addEventListener('click', () => {
+      alert('Hello! You just triggered your first JavaScript interaction 🎉');
+    });
+  </script>
+
+</body>
+</html>
