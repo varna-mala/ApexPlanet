@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Responsive Website</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Contact Form -->
+        <section class="card">
+            <h2>Contact Form</h2>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your Name">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your Email">
+
+                <textarea
+                    id="message"
+                    placeholder="Enter your Message"></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+            <p id="formMessage"></p>
+
+        </section>
+
+        <!-- To Do List -->
+        <section class="card">
+
+            <h2>To-Do List</h2>
+
+            <div class="todo">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a Task">
+
+                <button id="addTask">Add</button>
+
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
