@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 3 - Interactive Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Interactive Quiz & Joke Generator</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#joke">Jokes</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Quiz -->
+    <section class="card" id="quiz">
+
+        <h2>Web Development Quiz</h2>
+
+        <p>Which language is used to style web pages?</p>
+
+        <label><input type="radio" name="quiz" value="HTML"> HTML</label>
+
+        <label><input type="radio" name="quiz" value="CSS"> CSS</label>
+
+        <label><input type="radio" name="quiz" value="Python"> Python</label>
+
+        <label><input type="radio" name="quiz" value="Java"> Java</label>
+
+        <button onclick="checkAnswer()">Submit</button>
+
+        <p id="result"></p>
+
+    </section>
+
+    <!-- Joke API -->
+
+    <section class="card" id="joke">
+
+        <h2>Random Joke Generator</h2>
+
+        <button onclick="getJoke()">Get Joke</button>
+
+        <div id="jokeBox">
+            Click the button to load a joke.
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
